@@ -1,0 +1,44 @@
+{
+  "name": "readsas-js",
+  "version": "0.1.0",
+  "description": "Read SAS XPORT v5/v8, SAS7BDAT, and Dataset-JSON files into JSON-friendly metadata and records.",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/readsas-js.cjs",
+  "module": "./dist/readsas-js.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/readsas-js.js",
+      "require": "./dist/readsas-js.cjs"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js",
+      "require": "./dist/node.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.0.0"
+  },
+  "keywords": [
+    "sas",
+    "xport",
+    "xpt",
+    "sas7bdat",
+    "dataset-json",
+    "typescript"
+  ]
+}

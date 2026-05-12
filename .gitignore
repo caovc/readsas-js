@@ -1,0 +1,46 @@
+# Node dependencies
+node_modules/
+.pmpm-store/
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Vite / bundler cache
+.vite/
+
+# Misc cache
+.cache/
+.sass-cache/
+
+# Local runtime files
+*.local
+npm-debug.log*
